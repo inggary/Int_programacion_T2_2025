@@ -59,24 +59,26 @@
 
 #match-case | switch-case
 
-numero1 = 4
-numero2 = 6
-simbolo = '%'
+# numero1 = 4
+# numero2 = 6
+# simbolo = '%'
 
-match(simbolo):
-    case '+':
-        print(numero1+numero2)
-        # if(True):
-        #     print('')
-        # else:
-        #     print('')
-    case '-':
-        print(numero1-numero2)
-    case '*':
-        print(numero1*numero2)
-    case '/':
-        print(numero1/numero2)
-    case _:
-        print('No me enseñaron eso en la fabrica de programación.')
+# match(simbolo):
+#     case '+':
+#         print(numero1+numero2)
+#         # if(True):
+#         #     print('')
+#         # else:
+#         #     print('')
+#     case '-':
+#         print(numero1-numero2)
+#     case '*':
+#         print(numero1*numero2)
+#     case '/':
+#         print(numero1/numero2)
+#     case _:
+#         print('No me enseñaron eso en la fabrica de programación.')
 
 #-----------------------------------
+
+print( len('gary') )
