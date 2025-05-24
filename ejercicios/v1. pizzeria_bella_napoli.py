@@ -8,9 +8,8 @@ ingredientes_vegetariana = ['pimiento', 'tofu', 'maiz', 'queso', 'hongos']
 ingredientes_no_vegetariana = ['peperoni', 'jamon', 'salchicha italiana', 'tocino']
 orden = [] #'mozzarela y tomate'
 
-
 print("Bienvenido a Bella Napoli")
-print("\n--------------------------------------\n")
+print("\n" + "-"*30 + "\n")
 cantidad_sabores = int(input('Cantidad de sabores a elegir: '))
 if(cantidad_sabores<=2):
 
@@ -24,6 +23,7 @@ if(cantidad_sabores<=2):
         print("\n--------------------------------------\n")
         #if(tipo_pizza-1==0):
 
+        #comentario
         match(tipo_pizza_elegida-1):
             case 0:
                 print('Elegiste pizza vegetariana. \nIngredientes vegetarianos: \nMenu:')
@@ -45,5 +45,5 @@ if(cantidad_sabores<=2):
         print("\n--------------------------------------\n")
 
 print("\n------------------FACTURA--------------------\n")
-print(f'Su orden es: {", ".join(orden)}, mozzarella y tomate. \nGracias por su compra.')
+print(f'Su orden es: {", ".join(orden)}, mozzarella🧀 y tomate🍅. \nGracias por su compra.')
 print("\n---------------------------------------------\n")
