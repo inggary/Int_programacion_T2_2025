@@ -67,12 +67,56 @@ lista_frutas[indice_papa] = 'pera'
 
 # Diccionarios: Creación {clave: valor}, características (mutables, no ordenados antes de Python 3.7, acceso por clave).
 
+persona_itla = {
+    'nombre': 'Gary Pimentel',
+    'edad': 26,
+    'ciudad': 'Santo Domingo',
+    'comidas_favoritas': ['pizza', 'sushi', 'manzana'],
+    'mascota': {
+        'nombre': 'Luffy',
+        'especie': 'Perro',
+        'edad': 3
+    }
+}
+
+persona_itla['comidas_favoritas'].append('hamburguesa')
+
+# print(persona_itla['comidas_favoritas'][-1])
+
 # Operaciones con diccionarios: Acceder, añadir, modificar, eliminar elementos (del, pop()).
+
+persona_itla['profesion'] = 'programador' #añadir
+
+persona_itla['profesion'] = 'Programador y Cientifico de Datos' #modificar
+
+del persona_itla['ciudad'] #eliminar
+
 
 # Iterar sobre diccionarios (keys(), values(), items()).
 
+# print(list(persona_itla.keys())) #solo las claver
+
+# print(list(persona_itla.values())) #solo los valores
+
+# print(list(persona_itla.items()))
+
+# for key, value in persona_itla.items():
+#     print(f'{key}: {value}')
+
 # Tuplas: Creación (), características (inmutables, ordenadas). Casos de uso.
+
+# lista = (1,2,3,4,5)
+
+# print(lista[0])
 
 # Errores y Excepciones: ¿Qué pasa cuando el código falla?
 
 # Manejo de excepciones: Bloques try y except. Capturar tipos específicos de error (ej: ValueError, TypeError, ZeroDivisionError).
+
+try: #try intenta ejecutar el codigo
+    print(10/1)
+except Exception as e: # Except captura el error con Exception y lo renombro con as e (e puede ser cualquier nombre)
+    print(e)
+
+
+print('se ejecuto')
